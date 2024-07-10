@@ -30,13 +30,26 @@
 //    }
 //    add(5,5,function(){console.log("Hii i am also callback")} );
 
-var fs = require("fs");
-var os = require("os");
 
-var user = os.userInfo();
-console.log(user);
-console.log(user.username);
 
-fs.appendFile("greeting.txt", "Hi "+user.username+"\n", function(){
-    console.log("File is created successfully🤑");
-});
+// Core module fs/os
+// var fs = require("fs");
+// var os = require("os");
+
+// var user = os.userInfo();
+// console.log(user);
+// console.log(user.username);
+
+// fs.appendFile("greeting.txt", "Hi "+user.username+"\n", function(){
+//     console.log("File is created successfully🤑");
+// });
+
+
+// By this style we can import our file and function  from separate folder and path
+const notes = require("./note.js");
+
+var age =  notes.age;
+console.log(age);
+
+var result = notes.add(age+12,10);
+console.log(result);
