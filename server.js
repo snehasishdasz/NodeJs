@@ -38,5 +38,5 @@ console.log(user);
 console.log(user.username);
 
 fs.appendFile("greeting.txt", "Hi "+user.username+"\n", function(){
-    console.log("File is created successfully🤑")
+    console.log("File is created successfully🤑");
 });
