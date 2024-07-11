@@ -86,4 +86,26 @@
 //! {"name":"John","age":25,"city":"Bhonsor"}
 
 
+//* Serever making part and run server part and create api in node js
+//? const express = require('express')
+//? const app = express()
 
+//? app.get('/', function (req, res) {
+//?   res.send('Hello Welcome to our HOTEL....How can i help you')
+//? })
+
+//? app.get('/chicken',(req,res)=>{
+//?     res.send('Sure sir, i would love to serve CHICKEN...')
+//? })
+
+//? app.get('/idli',(req,res)=>{
+//?   var customized_idli = {
+//?     name: 'rava idli',
+//?     size:'10cm',
+//?     is_chutney: true,
+//?   }
+//?    res.send('Welcome to south indian section')
+//?    res.send(customized_idli.name)
+//? })
+
+//? app.listen(3000)
