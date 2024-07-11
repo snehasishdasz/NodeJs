@@ -32,7 +32,7 @@
 
 
 
-// *Core module fs/os
+//*Core module fs/os
 //? var fs = require("fs");
 //? var os = require("os");
 
@@ -54,14 +54,36 @@
 //? var result = notes.add(age+12,10);
 //? console.log(result);
 
-// * LOADASH
-var _ = require('lodash');
+//* LOADASH
+//?var _ = require('lodash');
 
-var data = ["hii", 1,2,1,2,1,3,4,"hii","hlw"];
-var filter = _.uniq(data);
-console.log(filter);
+//? var data = ["hii", 1,2,1,2,1,3,4,"hii","hlw"];
+//? var filter = _.uniq(data);
+//? console.log(filter);
 
-var data = "ds";
-console.log(_.isString(data)); //true
-console.log(_.isString(5)); //false
-console.log(_.isString("hii"));  //true
+//? var data = "ds";
+//? console.log(_.isString(data)); 
+//! true
+//? console.log(_.isString(5)); 
+//!false
+//? console.log(_.isString("hii"));  
+//!true
+
+//* JSON to Object convert
+//? const jsonString = '{"name":"John","age":25,"city":"Bhonsor"}';
+//? const Object = JSON.parse(jsonString);
+//? console.log(Object); 
+//! { name: 'John', age: 25, city: 'Bhonsor' } 
+//JSON is always STRING TYPE
+//* Object to JSON convert
+//? const objectToConvert = 
+//? {   name: 'John', 
+//?     age: 25, 
+//?     city: 'Bhonsor' 
+//? };
+//? const json = JSON.stringify(objectToConvert);
+//? console.log(json);
+//! {"name":"John","age":25,"city":"Bhonsor"}
+
+
+
