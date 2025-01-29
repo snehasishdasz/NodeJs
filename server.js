@@ -55,7 +55,7 @@
 //? console.log(result);
 
 //* LOADASH
-//?var _ = require('lodash');
+//? var _ = require('lodash');
 
 //? var data = ["hii", 1,2,1,2,1,3,4,"hii","hlw"];
 //? var filter = _.uniq(data);
@@ -87,25 +87,27 @@
 
 
 //* Serever making part and run server part and create api in node js
-//? const express = require('express')
-//? const app = express()
+ const express = require('express')
+ const app = express()
 
-//? app.get('/', function (req, res) {
-//?   res.send('Hello Welcome to our HOTEL....How can i help you')
-//? })
+//?  app.get('/', function (req, res) {
+//?    res.send('Hello Welcome to our HOTEL....How can i help you')
+//?  })
 
-//? app.get('/chicken',(req,res)=>{
-//?     res.send('Sure sir, i would love to serve CHICKEN...')
-//? })
+//?  app.get('/chicken',(req,res)=>{
+//?      res.send('Sure sir, i would love to serve CHICKEN...')
+//?  })
 
-//? app.get('/idli',(req,res)=>{
-//?   var customized_idli = {
-//?     name: 'rava idli',
-//?     size:'10cm',
-//?     is_chutney: true,
-//?   }
-//?    res.send('Welcome to south indian section')
-//?    res.send(customized_idli.name)
-//? })
+//?  app.get('/idli',(req,res)=>{
+//?    var customized_idli = {
+//?      name: 'rava idli',
+//?      size:'10cm',
+//?      is_chutney: true,
+//?    }
+    // res.send('Welcome to south indian section')
+//?     res.send(customized_idli)
+//?  })
 
-//? app.listen(3000)
+//?  app.listen(3000,()=>{
+//?     console.log('listening on port 3000');
+//?     })
